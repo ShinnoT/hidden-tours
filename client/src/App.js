@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
 import { Route } from "react-router-dom";
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
+import AppBar from "material-ui/AppBar";
 
 import HomePage from "./components/HomePage";
 import Search from "./components/Search";
@@ -11,14 +13,17 @@ import Plan from "./components/Plan";
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <nav>navbar here</nav>
+      <MuiThemeProvider>
+        <AppBar
+          title="Elisa's Birthday Gift"
+          iconClassNameRight="muidocs-icon-navigation-expand-more"
+        />
         <Route path="/" exact component={HomePage} />
         <Route path="/search" exact component={Search} />
         <Route path="/tours" exact component={ToursList} />
         <Route path="/tours/:tourId" exact component={Tour} />
         <Route path="/tours/:tourId/:planId" exact component={Plan} />
-      </div>
+      </MuiThemeProvider>
     );
   }
 }
