@@ -1,0 +1,43 @@
+.Search {
+  height: calc(100% - 64px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-formish {
+  height: calc(95% - 64px);
+  width: 90%;
+  /* margin: auto; */
+  /* background-color: #e8eef9; */
+  border-radius: 3px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto";
+  color: rgb(80, 80, 80);
+  text-align: left;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.submitish {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.content {
+  width: 256px;
+  margin: 0 auto;
+  margin-top: 4rem;
+}

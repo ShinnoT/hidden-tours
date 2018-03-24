@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <MuiThemeProvider>
         <AppBar
-          title="Elisa's Birthday Gift"
+          title="Hidden Tours"
           iconClassNameRight="muidocs-icon-navigation-expand-more"
         />
         <Route path="/" exact component={HomePage} />

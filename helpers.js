@@ -1,4 +1,16 @@
 const createTours = () => {
+  const images = [
+    "https://favy-inbound-singapore.s3.amazonaws.com/uploads/topic_item/image/1450/retina_shutterstock_344861591.jpg",
+    "https://handluggageonly.co.uk/wp-content/uploads/2017/05/iStock-509472000.jpg",
+    "https://sase.org/wp-content/uploads/2016/06/Kyoto_8274.jpg",
+    "https://blazepress.com/.image/t_share/MTQ1NTk0NDA1OTUxMTg2MjA1/leslie-taylor-photo-of-kyoto-1.png",
+    "https://img.theculturetrip.com/840x440/smart/wp-content/uploads/2017/01/kyoto-1024x684.jpg",
+    "https://images.adsttc.com/media/images/59e5/2706/b22e/3839/3400/004f/large_jpg/open-uri20171016-29817-qw6uck.jpg?1508189949",
+    "https://favy-inbound-singapore.s3.amazonaws.com/uploads/topic_item/image/1450/retina_shutterstock_344861591.jpg",
+    "https://handluggageonly.co.uk/wp-content/uploads/2017/05/iStock-509472000.jpg",
+    "https://sase.org/wp-content/uploads/2016/06/Kyoto_8274.jpg",
+    "https://blazepress.com/.image/t_share/MTQ1NTk0NDA1OTUxMTg2MjA1/leslie-taylor-photo-of-kyoto-1.png"
+  ];
   const tourDescriptions = [
     {
       title: "Cycle Around Gojo",
@@ -54,6 +66,7 @@ const createTours = () => {
       id: i,
       tourName: tourDescriptions[i].title,
       tourDesc: tourDescriptions[i].desc,
+      tourImage: images[i],
       plans: [
         {
           id: 1,
