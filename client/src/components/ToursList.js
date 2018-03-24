@@ -23,13 +23,15 @@ class ToursList extends Component {
       .then(tours => this.setState({ tours }));
   }
   render() {
+    console.log(this.state.tours);
+
     return (
-      <div className="TourList">
+      <div className="ToursList">
         {/* <h1>tours list page</h1> */}
         {/* {this.state.tours.map(tour => <p key={tour.id}>{tour.id}</p>)} */}
         {this.state.tours.map(tour => {
           return (
-            <Card containerStyle={{ margin: "10px 0" }}>
+            <Card key={tour.id} containerStyle={{ margin: "10px 0" }}>
               <CardHeader title={tour.tourName} />
               <CardMedia
               // overlay={

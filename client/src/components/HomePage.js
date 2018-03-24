@@ -8,7 +8,7 @@ class HomePage extends Component {
       <div className="HomePage">
         <div className="overlay">
           <Link className="explore" to="/search">
-            <i class="far fa-compass compass" />
+            <i className="far fa-compass compass" />
           </Link>
         </div>
       </div>

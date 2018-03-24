@@ -1,0 +1,26 @@
+.Tour {
+  text-align: left;
+}
+.tour-container {
+  width: 90%;
+  padding: 1.2rem;
+  margin: 0 auto;
+}
+
+.Tour > h1 {
+  text-align: center;
+}
+
+.chips-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tour-info {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.tour-description {
+  font-size: 1.3rem;
+}
