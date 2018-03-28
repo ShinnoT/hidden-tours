@@ -3,7 +3,7 @@ const bodyParser = require("body-parser");
 const { createTours, findTour, findPlan } = require("./helpers");
 
 const app = express();
-const port = 5000;
+const port = process.env.port || 5000;
 
 const tours = createTours();
 
