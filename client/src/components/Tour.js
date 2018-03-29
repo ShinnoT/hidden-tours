@@ -142,7 +142,16 @@ class Tour extends Component {
                   </IconButton>
                 }
               >
-                <img src={plan.planImage} />
+                <img
+                  src={plan.planImage}
+                  onClick={e => {
+                    e.preventDefault();
+                    this.props.history.push(
+                      `/tours/${this.props.match.params.tourId}/${plan.id}`
+                    );
+                  }}
+                  alt="plan pic"
+                />
               </GridTile>
             ))}
           </GridList>
